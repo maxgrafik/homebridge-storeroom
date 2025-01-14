@@ -1,7 +1,7 @@
 <span align="center">
 
-<img src="./branding/app-icon.png" style="margin: 12px 0"><br>
-<img src="./branding/storeroom.svg" style="height: 30px; margin: 12px 0" alt="Storeroom">
+<img src="./branding/app-icon.png"><br><br>
+<img src="./branding/storeroom.svg" style="height: 30px" alt="Storeroom">
 
 # Universal data store for Homebridge
 
