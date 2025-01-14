@@ -1,0 +1,28 @@
+{
+    "pluginAlias": "Storeroom",
+    "pluginType": "platform",
+    "singular": true,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "serverPort": {
+                "title": "Server port",
+                "type": "number",
+                "default": 8080
+            },
+            "serverSecret": {
+                "title": "Secret",
+                "type": "string"
+            }
+        }
+    },
+    "layout": [
+        {
+            "title": "Server",
+            "items": [
+                "serverPort",
+                "serverSecret"
+            ]
+        }
+    ]
+}

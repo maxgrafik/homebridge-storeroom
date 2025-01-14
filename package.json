@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "displayName": "Storeroom",
+  "name": "homebridge-storeroom",
+  "version": "0.1.0",
+  "description": "Universal data store for Homebridge",
+  "main": "src/index.js",
+  "author": "Hendrik Meinl",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maxgrafik/homebridge-storeroom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxgrafik/homebridge-storeroom/issues"
+  },
+  "engines": {
+    "node": "^20.18.0 || ^22.10.0",
+    "homebridge": "^1.8.0 || ^2.0.0-beta.0"
+  },
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
