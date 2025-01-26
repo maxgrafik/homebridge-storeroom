@@ -2,7 +2,7 @@
   "private": true,
   "displayName": "Storeroom",
   "name": "homebridge-storeroom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Universal data store for Homebridge",
   "main": "src/index.js",
   "author": "Hendrik Meinl",
