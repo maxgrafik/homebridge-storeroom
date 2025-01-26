@@ -87,11 +87,13 @@ class Server {
             }
 
             // calculate hash
-            const serverHash = crypto.hash("sha256", nonce + ":" + this.config.serverSecret);
+            const serverHash = crypto.createHash("sha256");
+            serverHash.update(nonce + ":" + this.config.serverSecret);
 
             // check if clientHash === serverHash
+            // not timing save, but we're not running a banking website here
             const clientHash = match.groups.hash;
-            if (clientHash !== serverHash) {
+            if (clientHash.toLowerCase() !== serverHash.digest("hex").toLowerCase()) {
                 delete this.tokens[nonce];
                 return this.denyAccess(res);
             }

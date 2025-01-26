@@ -2,26 +2,40 @@
     "pluginAlias": "Storeroom",
     "pluginType": "platform",
     "singular": true,
+    "headerDisplay": "Storeroom for Homebridge Setup",
     "schema": {
         "type": "object",
         "properties": {
+            "name": {
+                "type": "string",
+                "title": "Storeroom",
+                "default": "Storeroom"
+            },
             "serverPort": {
-                "title": "Server port",
                 "type": "number",
+                "title": "Port",
                 "default": 8080
             },
             "serverSecret": {
-                "title": "Secret",
-                "type": "string"
+                "type": "string",
+                "title": "Secret"
             }
         }
     },
-    "layout": [
+    "form": [
         {
+            "type": "fieldset",
             "title": "Server",
+            "expandable": false,
             "items": [
-                "serverPort",
-                "serverSecret"
+                {
+                    "type": "flex",
+                    "flex-flow": "row wrap",
+                    "items": [
+                        "serverPort",
+                        "serverSecret"
+                    ]
+                }
             ]
         }
     ]

@@ -1,11 +1,16 @@
-<span align="center">
+<p align="center">
+    <img src="./branding/app-icon.png">
+</p>
+<p align="center">
+    <img src="./branding/storeroom.svg" style="height: 30px" alt="Storeroom">
+</p>
 
-<img src="./branding/app-icon.png"><br><br>
-<img src="./branding/storeroom.svg" style="height: 30px" alt="Storeroom">
+<span align="center">
 
 # Universal data store for Homebridge
 
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/maxgrafik/homebridge-storeroom)](https://github.com/maxgrafik/homebridge-storeroom)
+![Version](https://img.shields.io/github/package-json/v/maxgrafik/homebridge-storeroom)
+![Homebridge support](https://img.shields.io/badge/Homebridge-1.8.0_%7C_2.0.0--beta-blue)
 
 </span>
 
@@ -21,7 +26,8 @@ This [Homebridge](https://homebridge.io) plugin exposes a simple server API to s
 "platforms": [
     ...
     {
-        "platform": "Storeroom"
+        "platform": "Storeroom",
+        "name": "Storeroom",
         "serverPort": <port>,
         "serverSecret": <secret>
     }
