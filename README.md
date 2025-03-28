@@ -42,7 +42,7 @@ Option | Description
 
 ## Usage
 
-By making simple HTTP requests to your Homebridge server you can either get or set key/value pairs to store whatever (JSON) data. In an automation shortcut you may use `Get contents of URL` to do so. No need for dummy switches anymore.
+By making simple HTTP requests to your Homebridge server you can either get or set key/value pairs to store whatever (JSON) data. In an automation shortcut you may use `Get contents of URL` to do so. No need for dummy switches.
 
 ### Examples
 
@@ -99,6 +99,6 @@ The nonce is valid for 5 minutes and can be used - you guessed it - only once. A
 
 ## Why on earth ...
 
-I know automation shortcuts will look like crap and things can get pretty complicated using this method. But unfortunately HomeKit does not provide a way to store arbitrary data for later use. Some people use dummy switches to achieve similar things, but you may end up having a lot of these littering around in some kind of dummy room.
+Unfortunately HomeKit does not provide a way to store arbitrary data for later use. Some people use dummy switches to save state and achieve similar things, but you may end up having a lot of these littering around in some kind of dummy room.
 
 For personal shortcuts you may store your data in iCloud (which is a lot easier), but automation shortcuts in the Home app only have limited possibilities. That's why.
